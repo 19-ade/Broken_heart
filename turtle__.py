@@ -34,11 +34,16 @@ player.penup()
 player.goto(0, 170)
 player.pendown()
 
-for i in range(2):
+for i in range(3):
 	player.left(75)
-	player.forward(49)
-	player.right(55)
-	player.forward(40)
+	
+	if i == 2:
+		player.forward(29)
+		break
+	else:
+		player.forward(49)
+		player.right(65)
+		player.forward(40)
 
 	
 while True:
