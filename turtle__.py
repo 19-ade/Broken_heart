@@ -34,10 +34,26 @@ player.penup()
 player.goto(0, 170)
 player.pendown()
 
-for i in range(3):
+for i in range(2):
 	player.left(75)
 	player.forward(49)
-	player.right(65)
+	player.right(55)
 	player.forward(40)
 
+	
+while True:
+	wn.bgcolor("blue")
+
+	time.sleep(0.5)
+	wn.bgcolor("green")
+
+	time.sleep(0.5)
+	wn.bgcolor("yellow")
+
+	time.sleep(0.5)
+	wn.bgcolor("orange")
+	time.sleep(0.5)
+
+	
+	
 wn.mainloop()
